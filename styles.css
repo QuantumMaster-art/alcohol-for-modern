@@ -1,0 +1,670 @@
+/*Обнуление стилей*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body {
+	font-family: Roboto;
+}
+
+hr {
+	color: #E5E5E5;
+	height: 1px;
+	background-color: #E5E5E5;
+	width: 1320px;
+	margin: auto;
+}
+
+.container {
+	max-width: 1320px;
+	margin: 0 auto;
+}
+
+.header {
+	color: #fff;
+}
+
+.header__intro {
+	padding: 16px 0;
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+	background-color: #000;
+}
+
+.header__inner {
+	background: url('img/header-bg.jpg') no-repeat center left / 50% 100%;
+	background-color: #996B60;
+	padding-bottom: 100px;
+}
+
+.header__nav {
+	padding-top: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav__logo {
+	margin: 0 250px;
+}
+
+.nav__list {
+	list-style: none;
+	display: flex;
+}
+
+.nav__item {
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-right: 64px;
+	padding-bottom: 2px;
+	cursor: pointer;
+	border-bottom: 1px solid transparent;
+	transition: border-color .5s ease;
+}
+
+.nav__item:hover {
+	border-bottom: 1px solid #fff;
+	border-color: #fff;
+}
+
+.nav__item:last-child {
+	margin-right: 0;
+}
+
+.header__text {
+	max-width: 572px;
+	margin-top: 247px;
+	margin-left: auto;
+}
+
+.header__title {
+	font-family: 'Liberation Serif', sans-serif;
+	font-weight: 400;
+	max-width: 457px;
+	font-size: 73px;
+	line-height: 94px;
+	margin-bottom: 34px;
+}
+
+.header__subtitle {
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 46px;
+}
+
+.btn {
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 1px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.header__btn {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #000;
+	padding: 18px 52px 20px 52px;
+	transition: background-color .5s;
+}
+
+.header__btn:hover {
+	background-color: #fff;
+}
+
+.description {
+	padding-top: 59px;
+	padding-bottom: 41px;
+}
+
+.description__text,
+.ingredients__products, 
+.apiritifs__text,
+.drink__inner,
+.reviews__inner,
+.social__items {
+	flex-wrap: wrap;
+}
+
+.description__text {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.description__paragraph {
+	max-width: 290px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 32px;
+	margin-bottom: 36px;
+}
+
+.ingredients {
+	margin-top: 104px;
+	text-align: center;
+	margin-bottom: 140px;
+}
+
+.ingredients__header {
+	max-width: 673px;
+	margin: 0 auto;
+}
+
+.ingredients__title {
+	font-family: 'Liberation Serif', sans-serif;
+	font-size: 64px;
+	line-height: 80px;
+	margin-bottom: 24px;
+}
+
+.ingredients__subtitle {
+	margin-bottom: 82px;
+}
+
+.ingredients__products {
+	display: flex;
+	justify-content: space-around;
+}
+
+.products__title {
+	font-family: 'Liberation Serif', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 44px;
+	margin-bottom: 16px;
+}
+
+.products__subtitle {
+	max-width: 366px;
+	margin-bottom: 27px;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.ingredients__btn {
+	background-color: #000;
+	color: #fff;
+	padding: 18px 48px 20px 49px;
+	transition: all .4s;
+	border: 1px solid transparent;
+}
+
+.ingredients__btn:hover {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #000;
+}
+
+.apiritifs {
+	margin-top: 59.09px;
+	margin-bottom: 94px;
+}
+
+.apiritifs__img {
+	max-width: 100%;
+}
+
+.apiritifs__text {
+	margin-top: 54px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.apiritifs__title {
+	font-family: 'Liberation Serif', sans-serif;
+	font-size: 53px;
+	line-height: 80px;
+}
+
+.apiritifs_subtitle {
+	line-height: 32px;
+	font-size: 18px;
+	max-width: 548px;
+}
+
+.drink {
+	margin-top: 59.09px;
+	margin-bottom: 50px;
+}
+
+.drink__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.drink__title {
+	font-family: 'Liberation Serif', sans-serif;
+	font-size: 30px;
+	line-height: 44px;
+	margin-bottom: 19px;
+	max-width: 344px;
+}
+
+.drink__title--large {
+	95+64+154 = 159 + 154 = 313
+}
+
+.drink__paragraph {
+	max-width: 380px;
+	line-height: 32px;
+	font-size: 18px;
+	margin-bottom: 21px;
+}
+
+.drink__paragraph:last-child {
+	margin: 0;
+}
+
+.reviews {
+	background-color: #000;
+}
+
+.reviews__inner {
+	color: #fff;
+	padding: 95px 0 50px 0;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+.reviews__item {
+	max-width: 318px;
+}
+
+.reviews__paragraph {
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 17px;
+}
+
+.reviews__autor {
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.reviews__role {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.things {
+	padding-top: 60px;
+	padding-bottom: 59px;
+}
+
+.things__inner {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.things__img {
+	max-width: 100%;
+}
+
+.things__text {
+	max-width: 652px;
+}
+
+.things__title {
+	font-family: 'Liberation Serif', sans-serif;
+	font-size: 64px;
+	line-height: 80px;
+	margin-bottom: 154px;
+}
+
+.things__paragraph {
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 35px;
+}
+
+.things__link {
+	color: #000;
+}
+
+.mood {
+	padding: 60px 0;
+	background: url(img/mood.jpg) no-repeat center / cover;
+	color: #fff;
+	text-align: center;
+}
+
+.mood__playlist, 
+.mood__social {
+	max-width: 550px;
+	background-color: #000;
+}
+
+.mood__playlist {
+	padding: 40px 69px;
+	margin-bottom: 20px;
+}
+
+.mood__title {
+	font-family: 'Liberation Serif', sans-serif;
+	font-size: 55px;
+	line-height: 80px;
+	margin-bottom: 9px;
+}
+
+.mood__subtitle {
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 26px;
+}
+
+.btn--mood {
+	font-size: 12px;
+	line-height: 14px;
+	padding: 18px 58px 20px 58px;
+}
+
+.mood__social {
+	padding: 31px 134px;
+}
+
+.mood__follow {
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 17px;
+}
+
+.social__items {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+.social__item__link {
+	color: #fff;
+}
+
+.footer {
+	padding: 55px 0;
+	background-color: #000;
+	color: #fff;
+}
+
+.footer__subscribe {
+	max-width: 439px;
+}
+
+.footer__email {
+	border-bottom: 1px solid #818181;
+}
+
+.footer__title {
+	font-family: 'Liberation Serif', sans-serif;
+	font-size: 42px;
+	line-height: 72px;
+	margin-bottom: 12px;
+}
+
+.subscribe__paragraph {
+	max-width: 424px;
+	font-size: 18px;
+	line-height: 27px;
+	margin-bottom: 20px;
+}
+
+.footer__email {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__input,
+.footer__btn {
+	background-color: transparent;
+	color: #fff;
+}
+
+.footer__input {
+	padding: 21px 9px;
+	width: 375px;
+}
+
+.footer__input::placeholder {
+	padding: 9px;
+	font-size: 9px;
+	color: #818181;
+}
+
+.footer__btn {
+	font-size: 12px;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 141px;
+	flex-wrap: wrap;
+}
+
+.links__item {
+	text-transform: uppercase;
+}
+
+.nav__title {
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 30px;
+}
+
+.footer__nav {
+	list-style-type: none;
+	color: #FFFFFF99;
+}
+
+.footer__links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__link {
+	margin-bottom: 30px;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.links__item--explore {
+	margin-right: 81px;
+}
+
+.links__item--follow {
+	margin-right: 107px;
+}
+
+.footer__info {
+	display: flex;
+}
+
+.info__nav {
+	display: flex;
+}
+
+.info__item {
+	font-size: 16px;
+	line-height: 24px;
+	margin-right: 60px;
+	color: #FFFFFF99;
+}
+
+.info__item:first-child {
+	color: #fff;
+}
+
+.footer__link a,
+.footer__info a {
+	color: #FFFFFF99;
+}
+
+/* Adaptive */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Large devices (large desktops, 1200px and down) */
+@media screen and (max-width: 1200px) {
+	.nav__logo {
+		margin: 0 75px;
+	}
+
+	.nav__item {
+		margin-right: 25px;
+	}
+
+	.drink__text {
+		text-align: center
+	}
+
+	.drink__text,
+	.drink__title,
+	.drink__paragraph {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.drink__img {
+		margin: 0 auto;
+	}
+
+	.things__text {
+		padding: 20px 36px;
+	}
+
+	.mood__playlist,
+	.mood__social {
+		margin: 0 auto;
+	}
+
+	.mood__playlist {
+		margin-bottom: 30px
+	}
+
+	.footer {
+		padding: 55px 33px;
+	}
+}
+
+/* Medium devices (desktops, 992px and down) */
+@media screen and (max-width: 992px) { 
+	.footer__inner {
+		margin-bottom: 15px;
+	}
+
+	.footer__links,
+	.footer__info {
+		margin: 0 auto;
+	}
+
+	.info__nav {
+		margin: 0 auto;
+	}
+}
+
+/* Small devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+	.header {
+		color: #fff;
+	}
+
+	.header__inner {
+		text-align: center;
+	}
+
+	.header__title,
+	.header__subtitle {
+		background-color: #996b60;
+	}
+
+
+
+	.header__inner {
+		background-size: cover;
+	}
+
+	.apiritifs__text {
+	  display: block;
+	  text-align: center;
+	}
+
+	.ingredients__item {
+		margin-bottom: 25px
+	}
+
+	.products__subtitle {
+		margin-bottom: 12px
+	}
+
+	.apiritifs_subtitle {
+		max-width: 100%;
+	}
+
+	.things__inner {
+		text-align: center;
+	}
+
+	.things__img {
+		margin: 0 auto;
+	}
+
+	.things__text {
+		max-width: 100%;
+	}
+
+	.things__title {
+		margin-bottom: 13px
+	}
+
+	.info__item {
+		margin-right: 24px;
+	}
+}
+
+
+
