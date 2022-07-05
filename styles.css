@@ -47,6 +47,7 @@ hr {
 	background-color: #E5E5E5;
 	width: 1320px;
 	margin: auto;
+	max-width: 100%;
 }
 
 .container {
